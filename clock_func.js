@@ -1,5 +1,6 @@
 function updateClock() {
   var currentDateTime = new Date();
+	var dateString = currentDateTime.toDateString();
   var timeOfDay;
 
   var currentHours = currentDateTime.getHours();
@@ -19,7 +20,7 @@ function updateClock() {
     currentSecs = "0" + currentSecs;
   }
 
-  var currentTimeString = currentHours + ":" + currentMins + ":" + currentSecs + " " + timeOfDay;
+  var currentTimeString = dateString + "\n" + currentHours + ":" + currentMins + ":" + currentSecs + " " + timeOfDay;
 
   document.getElementById("clock").firstChild.nodeValue = currentTimeString;
 }
