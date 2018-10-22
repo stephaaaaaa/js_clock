@@ -20,7 +20,7 @@ function updateClock() {
     currentSecs = "0" + currentSecs;
   }
 
-  var currentTimeString = dateString + "\n" + currentHours + ":" + currentMins + ":" + currentSecs + " " + timeOfDay;
+  var currentTimeString = dateString + ",\n " + currentHours + ":" + currentMins + ":" + currentSecs + " " + timeOfDay;
 
   document.getElementById("clock").firstChild.nodeValue = currentTimeString;
 }
